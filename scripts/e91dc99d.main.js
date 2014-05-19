@@ -1,0 +1,1 @@
+!function(a){"use strict";var b={init:function(){localStorage.name&&$("#name").val(localStorage.name),localStorage.player&&$("#player").val(localStorage.player)}()};a.CharSheet=b}(this),$(".form-control").keyup(function(){localStorage[$(this).attr("name")]=$(this).val()}),$("#localStorageTest").submit(function(){localStorage.clear()});
