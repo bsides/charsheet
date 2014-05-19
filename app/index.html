@@ -1,105 +1,298 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>charsheet</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
+<head>
+  <meta charset="utf-8">
+  <title>charsheet</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
 
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="../bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
 
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
 
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">charsheet</h3>
+        <form id="localStorageTest" method="post" action="" class="form-horizontal">
+
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="name" id="name" class="stored" value="" />
             </div>
+          </div>
 
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Player</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="player" id="player" class="stored" value="" />
             </div>
+          </div>
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass</h4>
-                    <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-                </div>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Clan</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="clan" id="clan" class="stored" value="" />
             </div>
+          </div>
 
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Chronicle</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="chronicle" id="chronicle" class="stored" value="" />
             </div>
+          </div>
 
-        </div>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Nature</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option>-- Escolha --</option>
+                <option>Architect</option>
+                <option>Autocrat</option>
+                <option>Bon Vivant</option>
+                <option>Bravo</option>
+                <option>Capitalist</option>
+                <option>Caregiver</option>
+                <option>Celebrant</option>
+                <option>Chameleon</option>
+                <option>Child</option>
+                <option>Competitor</option>
+                <option>Conformist</option>
+                <option>Conniver</option>
+                <option>Curmudgeon</option>
+                <option>Dabbler</option>
+                <option>Deviant</option>
+                <option>Director</option>
+                <option>Enigma</option>
+                <option>Eye of the Storm</option>
+                <option>Fanatic</option>
+                <option>Galant</option>
+                <option>Guru</option>
+                <option>Idealist</option>
+                <option>Judge</option>
+                <option>Loner</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Demeanor</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="demeanor" id="demeanor" class="stored" value="" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Concept</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="concept" id="concept" class="stored" value="" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Generation</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option>-- Escolha --</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Sire</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="sire" id="sire" class="stored" value="" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Title</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" name="title" id="title" class="stored" value="" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Strength</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="strengthRange" min="0" max="5" value="0" oninput="this.form.strengthInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="strengthInput" min="0" max="5" value="0" oninput="this.form.strengthRange.value=this.value" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Dexterity</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="dexterityRange" min="0" max="5" value="0" oninput="this.form.dexterityInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="dexterityInput" min="0" max="5" value="0" oninput="this.form.dexterityRange.value=this.value" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Stamina</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="staminaRange" min="0" max="5" value="0" oninput="this.form.staminaInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="staminaInput" min="0" max="5" value="0" oninput="this.form.staminaRange.value=this.value" />
+            </div>
+          </div>
 
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Charisma</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="charismaRange" min="0" max="5" value="0" oninput="this.form.charismaInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="charismaInput" min="0" max="5" value="0" oninput="this.form.charismaRange.value=this.value" />
+            </div>
+          </div>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Manipulation</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="manipulationRange" min="0" max="5" value="0" oninput="this.form.manipulationInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="manipulationInput" min="0" max="5" value="0" oninput="this.form.manipulationRange.value=this.value" />
+            </div>
+          </div>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Appearance</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="appearanceRange" min="0" max="5" value="0" oninput="this.form.appearanceInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="appearanceInput" min="0" max="5" value="0" oninput="this.form.appearanceRange.value=this.value" />
+            </div>
+          </div>
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Perception</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="perceptionRange" min="0" max="5" value="0" oninput="this.form.perceptionInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="perceptionInput" min="0" max="5" value="0" oninput="this.form.perceptionRange.value=this.value" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Intelligence</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="intelligenceRange" min="0" max="5" value="0" oninput="this.form.intelligenceInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="intelligenceInput" min="0" max="5" value="0" oninput="this.form.intelligenceRange.value=this.value" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Wits</label>
+            <div class="col-sm-3">
+              <input class="form-control" type="range" name="witsRange" min="0" max="5" value="0" oninput="this.form.witsInput.value=this.value" />
+            </div>
+            <div class="col-sm-2">
+              <input class="form-control" type="number" name="witsInput" min="0" max="5" value="0" oninput="this.form.witsRange.value=this.value" />
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
