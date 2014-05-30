@@ -25,12 +25,11 @@
   <div class="container">
     <form id="localStorageTest" method="post" action="">
       <div class="row">
-        <div class="col-md-9">
-
+        <legend>Character Info</legend>
+        <div class="col-md-4 col-xs-4">
 
           <div class="form-horizontal">
 
-            <legend>Character</legend>
 
             <div class="form-group">
               <label for="name" class="col-sm-2 control-label">Name</label>
@@ -67,6 +66,13 @@
                 </select>
               </div>
             </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
 
             <div class="form-group">
               <label for="" class="col-sm-2 control-label">Chronicle</label>
@@ -116,6 +122,14 @@
               </div>
             </div>
 
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
+
+
+
             <div class="form-group">
               <label for="" class="col-sm-2 control-label">Concept</label>
               <div class="col-sm-10">
@@ -154,146 +168,254 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="" class="col-sm-2 control-label">Title</label>
-              <div class="col-sm-10">
-                <input class="form-control" type="text" name="title" id="title" class="stored" value="" />
-              </div>
-            </div>
 
-          </div></div></div>
-          <div class="row attributes">
-
-            <legend>Attributes</legend>
-
-            <div class="col-md-4">
-
-              <div class="form-horizontal">
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Strength</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="strengthRange" min="0" max="5" value="0" oninput="this.form.strengthInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="strengthInput" min="0" max="5" value="0" oninput="this.form.strengthRange.value=this.value" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Dexterity</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="dexterityRange" min="0" max="5" value="0" oninput="this.form.dexterityInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="dexterityInput" min="0" max="5" value="0" oninput="this.form.dexterityRange.value=this.value" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Stamina</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="staminaRange" min="0" max="5" value="0" oninput="this.form.staminaInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="staminaInput" min="0" max="5" value="0" oninput="this.form.staminaRange.value=this.value" />
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="form-horizontal">
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Charisma</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="charismaRange" min="0" max="5" value="0" oninput="this.form.charismaInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="charismaInput" min="0" max="5" value="0" oninput="this.form.charismaRange.value=this.value" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Manipulation</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="manipulationRange" min="0" max="5" value="0" oninput="this.form.manipulationInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="manipulationInput" min="0" max="5" value="0" oninput="this.form.manipulationRange.value=this.value" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Appearance</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="appearanceRange" min="0" max="5" value="0" oninput="this.form.appearanceInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="appearanceInput" min="0" max="5" value="0" oninput="this.form.appearanceRange.value=this.value" />
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-horizontal">
-
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Perception</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="perceptionRange" min="0" max="5" value="0" oninput="this.form.perceptionInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="perceptionInput" min="0" max="5" value="0" oninput="this.form.perceptionRange.value=this.value" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Intelligence</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="intelligenceRange" min="0" max="5" value="0" oninput="this.form.intelligenceInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="intelligenceInput" min="0" max="5" value="0" oninput="this.form.intelligenceRange.value=this.value" />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="" class="col-sm-4 control-label">Wits</label>
-                  <div class="col-sm-5">
-                    <input class="form-control" type="range" name="witsRange" min="0" max="5" value="0" oninput="this.form.witsInput.value=this.value" />
-                  </div>
-                  <div class="col-sm-3">
-                    <input class="form-control" type="number" name="witsInput" min="0" max="5" value="0" oninput="this.form.witsRange.value=this.value" />
-                  </div>
-                </div>
-
-              </div>
-            </div>
 
           </div>
-
-
-
-          <div class="row">
-            <div class="col-md-9">
-              <legend>Finish</legend>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
+      <div class="row attributes">
+
+        <legend>Attributes</legend>
+
+        <div class="col-md-4 col-xs-4">
+
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Physical</legend>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Strength</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="strengthRange" min="0" max="5" value="0" oninput="this.form.strengthInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="strengthInput" min="0" max="5" value="0" oninput="this.form.strengthRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Dexterity</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="dexterityRange" min="0" max="5" value="0" oninput="this.form.dexterityInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="dexterityInput" min="0" max="5" value="0" oninput="this.form.dexterityRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Stamina</label>
+                <div class="col-sm-5">
+                  <select name="staminaRange" id="staminaRange" class="form-control" oninput="this.form.staminaInput.value=this.value">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Social</legend>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Charisma</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="charismaRange" min="0" max="5" value="0" oninput="this.form.charismaInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="charismaInput" min="0" max="5" value="0" oninput="this.form.charismaRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Manipulation</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="manipulationRange" min="0" max="5" value="0" oninput="this.form.manipulationInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="manipulationInput" min="0" max="5" value="0" oninput="this.form.manipulationRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Appearance</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="appearanceRange" min="0" max="5" value="0" oninput="this.form.appearanceInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="appearanceInput" min="0" max="5" value="0" oninput="this.form.appearanceRange.value=this.value" />
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Mental</legend>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Perception</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="perceptionRange" min="0" max="5" value="0" oninput="this.form.perceptionInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="perceptionInput" min="0" max="5" value="0" oninput="this.form.perceptionRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Intelligence</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="intelligenceRange" min="0" max="5" value="0" oninput="this.form.intelligenceInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="intelligenceInput" min="0" max="5" value="0" oninput="this.form.intelligenceRange.value=this.value" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="" class="col-sm-4 control-label">Wits</label>
+                <div class="col-sm-5">
+                  <input class="form-control" type="range" name="witsRange" min="0" max="5" value="0" oninput="this.form.witsInput.value=this.value" />
+                </div>
+                <div class="col-sm-3">
+                  <input class="form-control" type="number" name="witsInput" min="0" max="5" value="0" oninput="this.form.witsRange.value=this.value" />
+                </div>
+              </div>
+
+            </fieldset>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" id="abilities">
+        <legend>Abilities</legend>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+            <legend>Talents</legend>
+
+              <div class="form-group">
+                <label for="alertness" class="col-sm-8 control-label">Alertness</label>
+                <div class="col-sm-4">
+                  <select name="alertness" id="alertness" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="athletics" class="col-sm-8 control-label">Athletics</label>
+                <div class="col-sm-4">
+                  <select name="athletics" id="athletics" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="awareness" class="col-sm-8 control-label">Aweareness</label>
+                <div class="col-sm-4">
+                  <select name="awareness" id="awareness" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="brawl" class="col-sm-8 control-label">Brawl</label>
+                <div class="col-sm-4">
+                  <select name="brawl" id="brawl" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="empathy" class="col-sm-8 control-label">Empathy</label>
+                <div class="col-sm-4">
+                  <select name="empathy" id="empathy" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Skills</legend>
+            </fieldset>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="form-horizontal">
+
+            <fieldset>
+              <legend>Knowledges</legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <legend>Finish</legend>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </form>
+  </div>
+</div>
+</form>
 </div>
 
 <!-- build:js scripts/vendor.js -->
